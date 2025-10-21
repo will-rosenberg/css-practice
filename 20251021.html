@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+      }
+
+      div {
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        top: 10px;
+        left: 10px;
+        border-radius: 50%;
+        background: linear-gradient(
+              to bottom,
+              transparent 0%,
+              transparent 40%,
+              blue 40%,
+              blue 60%,
+              transparent 60%,
+              transparent 100%
+            )
+            110% 0%/55px 100px no-repeat,
+          radial-gradient(
+            circle,
+            white 0%,
+            white 40%,
+            transparent 40%,
+            transparent 100%
+          ),
+          conic-gradient(
+            from 90deg,
+            blue 0deg 45deg,
+            green 45deg 150deg,
+            yellow 150deg 210deg,
+            rgb(134, 28, 28) 210deg 320deg,
+            white 320deg 360deg
+          );
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
