@@ -14,11 +14,19 @@
       div {
         height: 100px;
         width: 100px;
-        background: red;
+        background: conic-gradient(
+          black 0deg 90deg,
+          white 90deg 180deg,
+          black 180deg 270deg,
+          white 270deg 360deg
+        );
+        background-size: 25px 25px;
         position: absolute;
         top: 100px;
-        left: calc(50% - 0px);
-        box-shadow: 100px 100px 0px 0px bisque;
+        left: calc(50% - 400px);
+        box-shadow: 100px 100px 0px 0px bisque,
+          100px 250px 0px 0px rgba(95, 32, 92, 1),
+          100px 375px 0px 0px rgb(22, 134, 65);
       }
       &:before {
         content: "";
