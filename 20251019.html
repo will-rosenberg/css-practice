@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        background: black;
+        margin: 0;
+        padding: 0;
+      }
+
+      div {
+        height: 100px;
+        width: 100px;
+        background: red;
+        position: absolute;
+        top: 100px;
+        left: calc(50% - 0px);
+        box-shadow: 100px 100px 0px 0px bisque;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        top: 100px;
+        left: 500px;
+        width: 150px;
+        height: 150px;
+        background: blue;
+        box-shadow: 100px 100px 0px 0px rgba(95, 32, 92, 1);
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 520px;
+        width: 150px;
+        height: 150px;
+        background: burlywood;
+        box-shadow: 100px 100px 0px 0px rgb(22, 134, 65);
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
