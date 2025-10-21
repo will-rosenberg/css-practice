@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background: green;
+      }
+      div {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        top: 10px;
+        left: 10px;
+        border-radius: 50%;
+        background: radial-gradient(
+          farthest-corner at 15px 13px,
+          white,
+          red,
+          darkred
+        );
+        box-shadow: 1px 1px 5px black;
+      }
+      &:before {
+        content: "";
+        position: absolute;
+        width: 10px;
+        height: 120px;
+        top: 55px;
+        left: 30px;
+        background: linear-gradient(to right, gray 0%, white 20%, gray 100%);
+        box-shadow: 1px 1px 5px black;
+      }
+      &:after {
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 10px;
+        top: 30px;
+        left: 10px;
+        background: linear-gradient(
+            to bottom,
+            white 0%,
+            transparent 15%,
+            transparent 85%,
+            darkred 100%
+          ),
+          linear-gradient(
+            to right,
+            darkred 0%,
+            red 10%,
+            white 30%,
+            red 50%,
+            darkred 100%
+          );
+      }
+    </style>
+  </head>
+  <body>
+    <div></div>
+  </body>
+</html>
